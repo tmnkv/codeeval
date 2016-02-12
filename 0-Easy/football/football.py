@@ -27,8 +27,7 @@ def main(inpit_file):
             print('{0}:{1};'.format(team, ','.join(fans)), end=' ')
         print()
 
-# if __name__ == '__main__':
-#     if len(sys.argv) != 2:
-#         print("Usage: {0} <input_file>".format(sys.argv[0]))
-#     main(sys.argv[1])
-main('/Users/tmnkv/GitHub/codeeval/0-Easy/football/input.txt')
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print("Usage: {0} <input_file>".format(sys.argv[0]))
+    main(sys.argv[1])
