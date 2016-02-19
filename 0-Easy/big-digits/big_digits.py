@@ -13,14 +13,14 @@ for line in EXAMPLE.split('\n'):
 
 
 def main(input_file):
-  fh = open(input_file)
-  for line in fh:
-      digits_only = [x for x in line if x.isdigit()]
-      for i in range(6):
-          result = ''
-          for digit in digits_only:
-              result += DIGITS[digit][i]
-          print(result)
+    fh = open(input_file)
+    for line in fh:
+        digits_only = [x for x in line if x.isdigit()]
+        for i in range(6):
+            result = ''
+            for digit in digits_only:
+                result += DIGITS[digit][i]
+            print(result)
 
 
 main(sys.argv[1])
